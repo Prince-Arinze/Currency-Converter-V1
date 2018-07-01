@@ -1,0 +1,76 @@
+body {
+    background: linear-gradient(#000000bf, #000000c9), url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.no-border {
+    border: 0px;
+}
+
+.card-customize {
+    margin: 0 auto;
+    max-width: 30rem;
+}
+
+.exchange-icon {
+    font-size: 21px;
+    margin: 15px 210px;
+    color: #150669 !important;
+    margin-top: 30px;
+}
+
+.myInput {
+    border: 1px solid gainsboro;
+    height: 70px;
+}
+
+.option-select {
+    width: 100% !important;
+    height: 70px;
+    border: 1px solid gainsboro;
+    margin-top: 10px;
+}
+
+
+.converUnit {
+    font-size: 15px;
+    background-color: #2196f3;
+    display: inline-block;
+    color: white;
+    padding: 3px 21px;
+    border-radius: 3px;
+}
+
+.body-backgound {
+    border-bottom: 1px solid gainsboro;
+}
+.text-white {
+    color: white;
+}
+
+.header {
+    padding: 14px 23px;
+    font-size: 30px;
+    text-align: center;
+    background: #150669 !important;
+}
+
+@media only screen and (max-width: 640px) {
+    .exchange-icon {
+        display: none !important;
+    }
+    .option-select {
+        width: 100% !important;
+    }
+}
+
+.btn-submit {
+    background: #150669 !important;
+}
+
+.footer {
+    background: #150669;
+    height: 120px;
+}

@@ -1,0 +1,69 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+    <!-- Meta For Sharing -->
+    <meta property="og:title" content="Currency Converter PWA">
+    <meta property="og:description" content="A Currency Conversion App.">
+    <meta property="og:image" content="https://Prince-Arinze.github.io/Currency-Converter/logo.jpg">
+    <meta property="og:image" content="https://Prince-Arinze.github.io/Currency-Converter/bg.jpg">
+    <meta property="og:url" content="https://Prince-Arinze.github.io/Currency-Converter/index.html">
+
+    <link rel="icon" href="logo.jpg" type="image/jpg" sizes="16x16">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Toaster -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+
+    <!-- Manifest.json -->
+    <link rel="manifest" href="manifest.json">
+    <title>Currency Converter</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="card card-customize mb-3 mt-5 no-border">
+            <div class="card-header bg-primary text-white header">CURRENCY CONVERTER</div>
+            <div class="card-body body-backgound">
+                <form onsubmit="return false">
+                    <div class="form-group">
+                        <input type="number" class="form-control text-center myInput" id="startCurrencyValue" aria-describedby="amount" placeholder="Enter amount to be converted">
+                    </div>
+                    <div class="form-group">
+                        <select class="option-select" name="startCurrency" id="startCurrency" onchange="showFrom(this)">
+
+                        </select>
+                         <span class="fa fa-exchange exchange-icon"></span>
+                        <select class="option-select" name="toCurrency" id="toCurrency" onchange="showFrom2(this)">
+
+                        </select>
+                    </div>
+                    <button type="button" class="btn btn-primary btn-md btn-block btn-submit" onclick="convertCurrency()">CONVERT</button>
+                </form>
+            </div>
+            <div class="card-body text-right footer">
+                <h1 id="viewResult" class="text-center text-white"></h1>
+                <div class="convertDiv text-center">
+                    <p class="badge badge-light mb-0 text-center" id="unitConversion"></p>
+                </div>
+            </div>
+        </div>
+        <p class="text-center text-white"> &copy;
+            <a class="text-white" href="https://github.com/Prince-Arinze" target="_blank">https://github.com/Prince-Arinze</a>
+        </p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/idb.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+</body>
+
+</html>

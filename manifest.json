@@ -1,0 +1,24 @@
+{
+
+  "author": "Prince Arinze",
+  "background_color": "#ffffff",
+  "description": "A Web App for converting Currency",
+  "display": "standalone",
+  "icons": [
+
+    {
+      "src": "https://Prince-Arinze.github.io/Currency-Converter/logo.jpg",
+      "sizes": "700x700",
+      "type": "image/jpg"
+    }
+
+  ],
+  "manifest_version": 2,
+  "name": "Currency Converter",
+  "orientation": "portrait",
+  "short_name": "Cypher Convert",
+  "start_url": "https://Prince-Arinze.github.io/Currency-Converter/index.html",
+  "theme_color": "#000000",
+  "version": "0.1.0"
+
+}
